@@ -85,7 +85,7 @@ class Source(Ncm2Source):
             return
 
     def _query_look(self, querystring):
-        command = ['look', querystring]
+        command = ['look -a', querystring]
 
         return subprocess.check_output(command).splitlines()
 
